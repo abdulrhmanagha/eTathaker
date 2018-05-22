@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPink">#db0e51</color>
+    <color name="colorYellow">#ffcd16</color>
+    <color name="colorGreen">#8c9514</color>
+    <color name="colorBackGround">#f5f7f9</color>
+    <color name="colorGrey">#959595</color>
+    <color name="CorrectGreen">#02c910</color>
+</resources>

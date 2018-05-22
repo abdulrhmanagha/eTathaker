@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f7f9"
+    >
+
+    <TextView
+        android:id="@+id/tickets_event_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/colorGreen"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:id="@+id/tickets_main"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="#FFFFFF"
+        >
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:src="@drawable/landing_page_header"
+            android:scaleType="centerCrop"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPink"
+            android:text="@string/landing_page_FragSold_sold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:textSize="30dp"
+            />
+
+        <TextView
+            android:id="@+id/tickets_txt_sold_tickets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorGreen"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="70dp"
+            />
+        
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">تذاكر</string>
+    <string name="login_main_txt">تسجيل الدخول</string>
+    <string name="login_sub_txt">يرجى إدخال كلمة المرور</string>
+    <string name="login_edittext_hint">كلمة المرور</string>
+    <string name="login_check_box">تذكرني عند تسجيل الدخول</string>
+    <string name="login_button">تسجيل الدخول</string>
+    <string name="connection_error">الجهاز غير متصل بالإنترنت !</string>
+    <string name="login_incorrect_pass">يرجى التأكد من كلمة المرور</string>
+    <string name="alert_verify_key">جاري التأكد من كلمة المرور</string>
+    <string name="alert_loading_tickets">جاري تحميل التذاكر</string>
+    <string name="title_activity_landing_page">التذاكر</string>
+    <string name="landing_page_tab_sold">التذاكر المباعة</string>
+    <string name="landing_page_tab_checkedin">التذاكر المسجلة</string>
+    <string name="landing_page_FragSold_sold">تم بيع</string>
+    <string name="landing_page_FragCheck_checkin">تم تسجيل</string>
+    <string name="sliding_menu_main">الرئيسية</string>
+    <string name="sliding_menu_listview">قائمة الحضور</string>
+    <string name="sliding_menu_logout">تسجيل الخروج</string>
+    <string name="alert_ticket_qrCorrect">تم قبول التذكرة</string>
+    <string name="alert_ticket_qrFailed">تم رفض التذكرة</string>
+    <string name="Toast_permission">التطبيق بحاجة إلى إذن للوصول للكاميرا</string>
+    <string name="alert_attendee_info">جاري تحميل معلومات الحضور</string>
+    <string name="attendee_listview_id_layout">المعرف</string>
+    <string name="ticket_type">نوع التذكرة</string>
+    <string name="buyer_name">إسم المشتري</string>
+    <string name="email">الإيميل</string>
+    <string name="last_check_ins">آخر دخول</string>
+    <string name="check_in_last">دخول</string>
+    <string name="ticket_info_activity_title">معلومات التذكرة</string>
+    <string name="developed_by">تطوير</string>
+
+    <string-array name="ticketinfo">
+        <item>@string/ticket_type</item>
+        <item>@string/buyer_name</item>
+        <item>@string/email</item>
+    </string-array>
+
+</resources>

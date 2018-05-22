@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/nav_menu_main"
+        android:title="@string/sliding_menu_main"
+        android:icon="@drawable/nav_main"></item>
+
+    <item android:id="@+id/nav_menu_menu"
+        android:title="@string/sliding_menu_listview"
+        android:icon="@drawable/nav_menu"></item>
+
+    <item android:id="@+id/nav_menu_logout"
+        android:title="@string/sliding_menu_logout"
+        android:icon="@drawable/nav_logout"></item>
+
+</menu>

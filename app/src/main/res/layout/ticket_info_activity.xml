@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerLayout"
+    android:background="@color/colorBackGround"
+    >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="agha.ticket_app.ListView">
+
+        <TextView
+            android:id="@+id/ticketinfo_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="15/2/2015"
+            android:textColor="@color/colorGrey"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="20dp"
+            />
+        
+        <ListView
+            android:id="@+id/ticketinfo_listview"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_below="@id/ticketinfo_date"
+            android:layout_marginTop="7dp"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            ></ListView>
+
+        <TextView
+            android:id="@+id/ticketinfo_static_checkinTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="@string/last_check_ins"
+            android:textColor="@color/colorGrey"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/ticketinfo_listview"
+            android:layout_centerHorizontal="true"
+            />
+
+        <ListView
+            android:id="@+id/ticketinfo_checkin_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:layout_below="@id/ticketinfo_static_checkinTxt"
+            android:layout_alignParentStart="true"></ListView>
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/checkin_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPink"
+            android:theme="@style/ActionBarTheme"
+            app:title="@string/ticket_info_activity_title"
+            >
+
+        </android.support.v7.widget.Toolbar>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_menu_landing"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/navigation_menu"
+        android:layout_gravity="start"
+        android:background="#f5f7f9"
+        app:itemTextColor="@color/colorGreen"
+        android:paddingBottom="96dp"
+        android:clipToPadding="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="-96dp"
+            android:background="#f5f7f9">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/developed_by"
+                android:id="@+id/nav_text"
+                android:textColor="#0000dc"
+                android:textSize="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"
+                />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="10dp"
+                android:layout_below="@id/nav_text"
+                android:id="@+id/nav_bytecode"
+                android:background="@drawable/bytecode_icon"
+                android:onClick="hyperLink"
+                />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/app_icon"
+                />
+        </RelativeLayout>
+
+    </android.support.design.widget.NavigationView>
+
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="agha.ticket_app.Login"
+    android:background="#FFFFFF"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:src="@drawable/dectop"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:id="@+id/login_circles"
+        />
+
+    <ImageView
+        android:id="@+id/login_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/app_icon"
+        android:layout_below="@id/login_circles"
+        android:layout_marginTop="40dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_txt_login"
+        android:textColor="@color/colorGreen"
+        android:text="@string/login_main_txt"
+        android:layout_below="@id/login_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_txt_password"
+        android:textColor="@color/colorPink"
+        android:text="@string/login_sub_txt"
+        android:layout_below="@id/login_txt_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="10dp"
+        />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_edit_password"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/login_txt_password"
+        android:layout_marginTop="30dp"
+        android:textColorHint="@color/colorPink"
+        android:hint="@string/login_edittext_hint"
+        android:textSize="15dp"
+        android:maxLines="1"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textColor="@color/colorPink"
+        android:textColorLink="@color/colorGreen"
+        android:theme="@style/MyEditTextTheme"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_error_txt"
+        android:text="@string/login_incorrect_pass"
+        android:textColor="#011627"
+        android:textStyle="bold"
+        android:layout_below="@+id/login_edit_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_internet_txt"
+        android:text="@string/connection_error"
+        android:textColor="#011627"
+        android:textStyle="bold"
+        android:layout_below="@+id/login_edit_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"
+        />
+
+    <CheckBox
+        android:id="@+id/login_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_check_box"
+        android:textColor="@color/colorGreen"
+        android:buttonTint="@color/colorPink"
+        android:layout_below="@id/login_error_txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textSize="10dp"
+        />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:id="@+id/login_button"
+        android:background="@drawable/login_button_bg"
+        android:text="@string/login_button"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/login_checkbox"
+        android:layout_marginTop="25dp"
+        android:elevation="15dp"
+        android:onClick="login"
+        />
+
+</RelativeLayout>

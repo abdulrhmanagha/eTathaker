@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackGround"
+    >
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/listview_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorGrey"
+            android:text="الإسم"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:id="@+id/listview_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorGrey"
+            android:text="15/15/2015"
+            android:textSize="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_alignBaseline="@+id/listview_id"
+            android:layout_alignBottom="@+id/listview_id"
+            android:layout_toStartOf="@+id/listview_id" />
+
+        <TextView
+            android:id="@+id/listview_id_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorGreen"
+            android:text="@string/attendee_listview_id_layout"
+            android:textSize="10dp"
+            android:layout_below="@id/listview_name"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:id="@+id/listview_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorGreen"
+            android:text="12345"
+            android:textSize="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignBaseline="@+id/listview_id_txt"
+            android:layout_alignBottom="@+id/listview_id_txt"
+            android:layout_toStartOf="@+id/listview_id_txt" />
+
+        <TextView
+            android:layout_width="15dp"
+            android:layout_height="20dp"
+            android:background="@drawable/listview_open"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
